@@ -1,0 +1,44 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "target": "es2017",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": false,
+    "baseUrl": ".",
+    "lib": ["es2017", "dom"],
+    "paths": {
+      "*": ["src/*"],
+      "@root/*": ["./*"],
+      "@main/*": ["src/main/*"],
+      "@resources/*": ["src/resources/*"],
+      "tests": ["/tests/*"]
+    }
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+  "exclude": ["node_modules", "babel.config.js"]
+}
